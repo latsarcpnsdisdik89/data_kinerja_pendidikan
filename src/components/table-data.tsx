@@ -86,7 +86,7 @@ export default function TableData({
                   className={`${
                     cell.column.id === 'indikator'
                       ? 'static shadow-none md:sticky md:left-0 md:bg-white md:text-start md:z-[1] md:shadow-[inset_-4px_0_8px_-4px_oklch(92.9%_0.013_255.508)]'
-                      : ''
+                      : 'text-center'
                   }`}
                   style={{
                     width: `${cell.column.getSize()}px`,
