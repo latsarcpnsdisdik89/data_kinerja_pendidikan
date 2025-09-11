@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="p-4">
+    <header className="px-4">
       <div className="flex justify-between items-center gap-8">
         <Link href="https://disdik.grobogan.go.id/" >
           <div className="flex items-center gap-3">
