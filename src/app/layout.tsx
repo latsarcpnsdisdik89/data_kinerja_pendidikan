@@ -16,7 +16,23 @@ const robotoMono = Roboto_Mono({
 export const metadata: Metadata = {
   title: 'Dinas Pendidikan Kabupaten Grobogan',
   description:
-    'Situs Resmi Informasi Data Peendidikan Dinas Pendidikan Kabupaten Grobogan',
+    'Situs resmi informasi data pendidikan dari Dinas Pendidikan Kabupaten Grobogan. Menyediakan data, layanan terkait pendidikan secara lengkap.',
+  openGraph: {
+    title: 'Dinas Pendidikan Kabupaten Grobogan',
+    description: 'Situs resmi informasi data pendidikan dari Dinas Pendidikan Kabupaten Grobogan',
+    url: 'https://data-pendidikan.vercel.app',
+    siteName: 'Dinas Pendidikan Kabupaten Grobogan',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1080,
+        height: 1080,
+        alt: 'Preview My Website',
+      },
+    ],
+    locale: 'id_ID',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
