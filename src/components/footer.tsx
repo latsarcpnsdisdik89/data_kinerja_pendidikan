@@ -11,10 +11,10 @@ export default function Footer() {
         <p>Dinas Pendidikan Kabupaten Grobogan</p>
       </div>
       <div className="flex justify-center gap-4 mt-4">
-        <Link href="https://www.instagram.com/disdikgrobogan">
+        <Link href="https://www.facebook.com/profile.php?id=100057139972975">
           <Image src={facebook} alt="Facebook" height={17} width={17} />
         </Link>
-        <Link href="https://www.facebook.com/profile.php?id=100057139972975">
+        <Link href="https://www.instagram.com/disdikgrobogan">
           <Image src={instagram} alt="Instagram" height={17} width={17} />
         </Link>
       </div>
