@@ -1,26 +1,46 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, cupcake;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: #2563eb; /* biru utama */
+  --color-accent: #3b82f6; /* biru cerah (highlight) */
+  --color-secondary: #ffffff; /* abu terang (background) */
+  --color-text: #111827; /* teks */
+  --color-neutral: #ffffff; /* putih */
+  --font-roboto-sans: 'Roboto', Arial, Helvetica, sans-serif;
+  --font-roboto-mono: 'Roboto Mono', monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-primary: var(--color-primary);
+  --color-accent: var(--color-accent);
+  --color-secondary: var(--color-secondary);
+  --color-text: var(--color-text);
+  --color-neutral: var(--color-neutral);
+  --font-roboto-sans: var(--font-roboto-sans);
+  --font-roboto-mono: var(--font-roboto-mono);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-secondary);
+  font-family: var(--font-roboto-sans);
+  background-image: linear-gradient(
+    to right top,
+    #fff5ff,
+    #fff3fe,
+    #fff0fc,
+    #ffeefb,
+    #ffebf9,
+    #ffe9f5,
+    #ffe6f1,
+    #ffe4ed,
+    #ffe1e5,
+    #ffe0dc,
+    #ffdfd3,
+    #ffdfca
+  );
 }
