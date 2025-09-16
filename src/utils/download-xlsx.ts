@@ -12,7 +12,7 @@ export const handleDownload = async ({
   if (!data.length || !selected) return;
 
   const workbook = new ExcelJS.Workbook();
-  const worksheet = workbook.addWorksheet('Data Pendidikan');
+  const worksheet = workbook.addWorksheet('Data Kinerja Pendidikan');
 
   // === HEADER ===
   worksheet.mergeCells('A1:A3');
@@ -121,5 +121,5 @@ export const handleDownload = async ({
 
   // === EXPORT ===
   const buffer = await workbook.xlsx.writeBuffer();
-  saveAs(new Blob([buffer]), `data-pendidikan-${selected}.xlsx`);
+  saveAs(new Blob([buffer]), `data-kinerja-pendidikan-${selected}.xlsx`);
 };

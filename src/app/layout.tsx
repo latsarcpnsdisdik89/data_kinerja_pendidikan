@@ -25,12 +25,12 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: 'Dinas Pendidikan Kabupaten Grobogan',
   description:
-    'Situs resmi informasi data pendidikan dari Dinas Pendidikan Kabupaten Grobogan. Menyediakan data, layanan terkait pendidikan secara lengkap.',
+    'Situs resmi informasi data kinerja pendidikan dari Dinas Pendidikan Kabupaten Grobogan. Menyediakan data kinerja pendidikan secara lengkap.',
   openGraph: {
     title: 'Dinas Pendidikan Kabupaten Grobogan',
     description:
-      'Situs resmi informasi data pendidikan dari Dinas Pendidikan Kabupaten Grobogan',
-    url: 'https://data-pendidikan.vercel.app',
+      'Situs resmi informasi data kinerja pendidikan dari Dinas Pendidikan Kabupaten Grobogan',
+    url: 'https://data-kinerja-pendidikan.vercel.app',
     siteName: 'Dinas Pendidikan Kabupaten Grobogan',
     images: [
       {
