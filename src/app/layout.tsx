@@ -43,6 +43,20 @@ export const metadata: Metadata = {
     locale: 'id_ID',
     type: 'website',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'uIqdWdOixikD1Q_jHzod_sqJQfCsdV7Dh_Cp8pp4UJ8'
+  }
 };
 
 export default function RootLayout({
