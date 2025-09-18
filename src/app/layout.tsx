@@ -117,6 +117,16 @@ const jsonLd = [
         'https://github.com/yugmade13',
       ],
     },
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'IDR',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5',
+      ratingCount: '1',
+    },
   },
 ];
 
