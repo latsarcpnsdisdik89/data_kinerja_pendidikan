@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { Roboto, Roboto_Mono } from 'next/font/google';
-import './globals.css';
 import Providers from './provider';
+import { GoogleAnalytics } from '@next/third-parties/google';
+
+import './globals.css';
 
 const robotoSans = Roboto({
   variable: '--font-roboto-sans',
@@ -149,6 +151,7 @@ export default function RootLayout({
         className={`${robotoSans.variable} ${robotoMono.variable} antialiased`}
       >
         <Providers>{children}</Providers>
+        <GoogleAnalytics gaId="G-0E8F8GX07C" />
       </body>
     </html>
   );
