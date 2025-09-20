@@ -69,42 +69,31 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'WebSite',
+  '@type': 'GovernmentOrganization',
   name: 'Dinas Pendidikan Kabupaten Grobogan',
   url: 'https://data-kinerja-pendidikan.vercel.app',
   address: {
     '@type': 'PostalAddress',
-    streetAddress:
-      'Jl. Pemuda No.35',
+    streetAddress: 'Jl. Pemuda No.35',
     addressLocality: 'Purwodadi',
     addressRegion: 'Jawa Tengah',
     postalCode: '58111',
     addressCountry: 'ID',
   },
-  provider: {
-    '@type': 'GovernmentOrganization',
-    name: 'Disdik Grobogan',
-    url: 'https://disdik.grobogan.go.id',
-  },
   sameAs: [
     'https://id.wikipedia.org/wiki/Kabupaten_Grobogan',
     'https://id.wikipedia.org/wiki/Purwodadi,_Grobogan',
     'https://www.wikidata.org/wiki/Q10614',
+    'https://disdik.grobogan.go.id',
     'https://www.facebook.com/disdik.grobogan',
     'https://www.instagram.com/disdikgrobogan',
   ],
-  offers: {
-    '@type': 'Offer',
-    price: '0',
-    priceCurrency: 'IDR',
-  },
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5',
     ratingCount: '1',
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
