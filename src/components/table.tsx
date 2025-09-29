@@ -153,7 +153,8 @@ export default function Table() {
               <input
                 type="search"
                 required
-                placeholder="Search"
+                placeholder="Cari Indikator"
+                disabled={isSheetsLoading || mutation.isPending}
                 onChange={(e) => setKeyword(e.target.value)}
               />
             </label>
@@ -202,14 +203,15 @@ export default function Table() {
           <input
             type="search"
             required
-            placeholder="Search"
+            placeholder="Cari Indikator"
+            disabled={isSheetsLoading || mutation.isPending}
             onChange={(e) => setKeyword(e.target.value)}
           />
         </label>
 
         {/* Loader untuk table */}
-        {mutation.isPending ? (
-          <div className="flex justify-center items-center h-[400px] mt-4">
+        {isSheetsLoading || mutation.isPending ? (
+          <div className="flex justify-center items-center h-[375px] mt-4">
             <span className="loading loading-spinner loading-lg text-primary"></span>
           </div>
         ) : (
